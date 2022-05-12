@@ -1,0 +1,750 @@
+<html lang="EN-CA">
+<head>
+  <title>Title Text</title>
+  <meta name="subject" content="Subject Text"/>
+  <meta name="author" content="Author Text"/>
+  <meta name="description" content="Desc Text"/>
+    
+  <style>
+     ReplaceWithStyleCSS
+  </style>
+ <style>A:active { color:#00F; }
+A:link { color:#009; }
+A:visited { color:#363; }
+A.pageLink { }
+A.tab { color:#333; }
+BODY { background-color:#F0F0F0; color:#000; margin-left:0px; margin-right:0px; margin-top:0px; font-family:verdana,arial,helvetica,sans-serif; }
+CAPTION { font-family:verdana,arial,helvetica,sans-serif; font-weight:bold; font-size:75%; color:#363; padding-left:1px; margin-bottom:0px; text-align:left; }
+DIV.abstract { width:640px; border:1px solid #333; padding:0px; text-align:left; }
+DIV.date { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; width:640px; text-align:left; padding-bottom:2px; }
+DIV.errorMargin { padding-top:0px; padding-bottom:12px; }
+DIV.errorTop { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; color:#A10808; width:640px; text-align:center; }
+DIV.filterRange { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:bold; width:640px; text-align:left; }
+H1,H3 { font-family:verdana,arial,helvetica,sans-serif; font-weight:bold; }
+H1 { font-size:110%; color:#FFFFFF; background-color:#003000; margin-bottom:0px; }
+H2 { font-family:arial,helvetica; font-size:110%; color:#060; font-weight:bold; text-align:left; margin-top:0px; }
+H2.abstract { width:640px; margin-bottom:0px; }
+H2.heading { font-family:arial,helvetica; font-size:110%; color:#060; font-weight:bold; text-align:left; margin-top:0px; width:640px; }
+H2.tab { margin-bottom:2px; }
+H3 { font-size:95%; color:#030603; }
+H3.filterName { margin-bottom:2px; margin-top:1px; text-align:left; width:640px; }
+H3.homeHeading { text-align:center; }
+H3.profile { margin-bottom:0px; }
+H3.mvisHead1 { margin-bottom:0px; }
+H3.mvisHead2 { margin-bottom:0px; }
+H3.searchName { margin-bottom:2px; margin-top:1px; text-align:left; width:640px; border-top:1px solid #999; }
+H3.subScreen { font-family:verdana,arial,helvetica,sans-serif; font-weight:bold; font-size:85%; padding:0px; color:#000; width:640px; text-align:left; }
+form { width:100%; margin:0px; padding:0px; border-collapse:collapse; }
+input { margin-left:3px; margin-top:10px; margin-bottom:4px; }
+LABEL { font-weight:bold; }
+LABEL.sub { font-weight:normal; }
+LI.filterMinus { margin:0px; padding:0px; }
+LI.filterPlus { margin:0px; padding:0px; }
+LI.flagList { margin:0px; padding:0px; }
+LI.home { padding-bottom:10px; }
+LI.instructions { }
+LI.profile { margin:0px; }
+P.instructions { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; width:640px; text-align:left; }
+PRE { font-family:courier new,verdana,arial,helvetica,monospace; font-size:75%; font-weight:normal; }
+SPAN.date { white-space:nowrap; margin-top:0px; }
+SPAN.filterError { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; color:#A10808; border:0px; padding:0px; margin:0px; text-align:center; }
+SPAN.filterRecords { font-weight:normal; color:#000; padding-left:5px; }
+SPAN.sort { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; background-color:#CCC; }
+SPAN.filterHeader { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; }
+SPAN.filterHeaderSort { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; background-color:#CCC; }
+TABLE.contentBox { border:1px solid #000; vertical-align:top; width:640px; }
+TABLE.detail { width:100%; border:0px; }
+TABLE.detailBorder { width:638px; }
+TABLE.filterBorder { width:625px; }
+TABLE.filterBoth { width:640px; border:1px solid #000; vertical-align:top; background-color:#F0F0F0; }
+TABLE.filterNav { padding:0px; width:640px; border-collapse:collapse; }
+TABLE.filterSearch { width:100%; border:none; border-collapse:collapse; vertical-align:top; }
+TABLE.optionalSearch { width:100%; border:none; border-collapse:collapse; vertical-align:top; border:1px solid #999; vertical-align:top; background-color:#F0F0F0; }
+TABLE.paginate { padding:0px; border:solid 1px; border-color:#999; border-collapse:collapse; margin-bottom:1px; background-color:#CCC; }
+TABLE.photo { width:640px; border-collapse:collapse; border-left:1px solid; border-right:1px solid; border-bottom:1px solid; border-color:#000; }
+TABLE.plusMinus { padding:0px; width:640px; border:none; border-collapse:collapse; page-break-after:auto; }
+TABLE.profile { width:100%; border:none; border-collapse:collapse; vertical-align:top; }
+TABLE.profileQuick { width:640px; border:0px; padding:0px; border-collapse:collapse; vertical-align:top; }
+TABLE.results { padding:0px; width:638px; border:none; border-collapse:collapse; }
+TABLE.resultsHeader { padding:0px; width:100%; border:none; border-collapse:collapse; }
+TABLE.searchFormTabLast { width:640px; border-right:2px solid #666; border-left:1px solid #999; border-bottom:1px solid #000; border-collapse:collapse; padding:0px; vertical-align:top; }
+TABLE.searchFormTabs { width:640px; border-right:1px solid #000; border-left:1px solid #999; border-bottom:1px solid #000; border-collapse:collapse; padding:0px; vertical-align:top; }
+TABLE.tabDoubleCol { border:0px; padding:0px; width:640px; border-collapse:collapse; }
+TABLE.tabs { width:640px; }
+TABLE.tabSingleCol { width:640px; border-right:1px solid #000; border-left:1px solid #999; border-bottom:1px solid #000; border-collapse:collapse; padding:0px; vertical-align:top; padding:15px; }
+TABLE.homeTable { border-left:0px ; border-top:0px; border-bottom:0px; border-color:black; vertical-align:top; width:640px; align:center }
+TABLE.homeTools { border-top:0px ; border-left:0px; border-right:0px ; border-color:#060606; border-collapse:collapse; vertical-align:top; padding:10px; }
+TABLE.text { border:0px; padding:0px; width:640px; }
+TD.filterHeader { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; }
+TD.filterHeaderSort { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; background-color:#CCC; }
+TD.filterLeft { border-right:1px solid #999; border-left:1px solid #000; border-bottom:1px solid #000; vertical-align:top; background-color:#F0F0F0; }
+TD.filterRight { border-right:1px solid; border-bottom:1px solid; border-color:#000; vertical-align:top; background-color:#F0F0F0; }
+TD.instructions { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; text-align:left; }
+TD.list { padding:0px; margin:0px; }
+TD.noTabLeft { border-right:1px solid #999; border-left:1px solid #000; border-bottom:1px solid #000; border-top:1px solid #000; }
+TD.noTabRight { border-top:1px solid; border-right:1px solid; border-bottom:1px solid; border-color:#000; }
+TD.optionOne { border-right:1px solid #999; }
+TD.profilePerformCell { border-bottom:1px solid #000; border-left:1px solid #000; border-right:1px solid #000; }
+TD.profileError { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; color:#A10808; border-left:1px solid; border-right:1px solid; border-color:#000; text-align:center; }
+TD.profileLeft { border-right:1px solid #999; border-left:1px solid #000; border-bottom:1px solid #000; vertical-align:top; }
+TD.profileRight { border-right:1px solid; border-bottom:1px solid; border-color:#000; vertical-align:top; }
+TD.resultsTop { border-top:1px solid #999; padding-top:3px; }
+TD.searchTabActive { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:bold; border-left:1px solid #999; border-top:1px solid #999; border-right:2px solid #666; border-collapse:collapse; padding-left:5px; padding-right:5px; padding-top:2px; text-align:center; vertical-align:top; color:#030; }
+TD.sort { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; background-color:#CCC; }
+TD.tab { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; border-left:1px solid #999; border-top:1px solid #999; border-right:1px solid #000; border-bottom:1px solid #000; border-collapse:collapse; padding-left:5px; padding-right:5px; padding-top:3px; text-align:center; vertical-align:top; }
+TD.tabActive { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:bold; border-left:1px solid #999; border-top:1px solid #999; border-right:2px solid #666; border-collapse:collapse; padding-left:5px; padding-right:5px; padding-top:2px; text-align:center; vertical-align:top; color:#030; }
+TD.tabEnd { visibility:visible; display:block; border-bottom:1px solid #000; border-collapse:collapse; }
+TD.tabEndPrint { visibility:hidden; display:none; }
+TD.tabName { border-bottom:1px solid #000; border-collapse:collapse; }
+TD.tabSpace { border-bottom:1px solid; border-color:#000; border-collapse:collapse; width:5px; }
+TH { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; text-align:left; padding:0px; }
+TH.filterHeader { font-weight:normal; border-top:1px solid #999; border-bottom:1px solid #999; background-color:#FFFFE6; padding-top:2px; padding-bottom:2px; }
+TH.filterHeaderSort { font-weight:bold; border-top:1px solid #999; border-bottom:1px solid #999; background-color:#CCC; padding-top:2px; padding-bottom:2px; }
+TH.filterHeaderSortSub { font-weight:normal; font-size:75%; border-bottom:1px solid #999; background-color:#CCC; padding-bottom:2px; }
+TH.filterHeaderSortSuper { font-weight:bold; border-top:1px solid #999; background-color:#CCC; padding-top:2px; }
+TH.filterHeaderSub { font-weight:normal; font-size:75%; text-align:left; border-bottom:1px solid #999; background-color:#FFFFE6; padding-bottom:2px; }
+TH.filterHeaderSubRight { font-weight:normal; font-size:75%; text-align:right; border-bottom:1px solid #999; background-color:#FFFFE6; padding-bottom:2px; }
+TH.filterHeaderSuper { font-weight:normal; text-align:center; border-top:1px solid #999; background-color:#FFFFE6; padding-top:2px; }
+TH.filterHeaderSuperLeft { font-weight:normal; text-align:left; border-top:1px solid #999; background-color:#FFFFE6; padding-top:2px; }
+TH.filterNone { font-size:75%; border-top:1px solid #999; border-bottom:1px solid #999; background-color:#FFFFE6; padding:1px; }
+TH.filterNoneSub { font-size:75%; border-bottom:1px solid #999; background-color:#FFFFE6; }
+TH.filterNoneSortSub { font-size:75%; border-bottom:1px solid #999; background-color:#CCC; }
+TH.filterNoneSuper { font-size:75%; border-top:1px solid #999; background-color:#FFFFE6; }
+TH.secProfile { color:#363; background-color:#FFFFE6; margin-bottom:0px; }
+TH.sort { font-weight:bold; border-top:1px solid #999; border-bottom:1px solid #999; background-color:#CCC; }
+TR { vertical-align:top; }
+TR.bottom { vertical-align:bottom; }
+UL { font-family:verdana,arial,helvetica,sans-serif; font-size:95%; font-weight:normal; text-align:left; }
+UL.filterMinus { list-style-type:circle; margin-left:17px; margin-top:0px; margin-bottom:5px; padding-top:0px; padding-bottom:0px; }
+UL.filterPlus { margin-left:17px; margin-top:0px; margin-bottom:0px; padding:0px; }
+UL.flagList { list-style-type:circle; margin-left:17px; margin-top:-2px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; }
+UL.home { margin-left:15px; margin-top:10px; }
+UL.instructions { width:640px; margin-left:15px; margin-top:0px; margin-bottom:15px; }
+UL.profile { margin-left:15px; margin-top:0px; margin-bottom:0px; }
+#advancedSearch { width:165px; }
+#homeNewsCarrier { width:99%; border-bottom:1px solid #666; border-collapse:collapse; vertical-align:top; padding:3px; }
+#homeNewsCarrierPrint { width:99%; border-bottom:1px solid #666; border-collapse:collapse; vertical-align:top; padding:3px; }
+#homeNewsVehicle { width:99%; border-collapse:collapse; vertical-align:top; padding:3px; }
+#performBack { width:180px; }
+#quickSearch { width:145px; }
+.backH1 { background-color:#003000; text-align:left; width:100%; margin-top:0px; }
+.buttons { padding:0px; width:640px; border-collapse:collapse; text-align:left; border:0px; margin-top:15px; }
+.deletionClass { position: relative; display: block; }
+.disclaimer { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; width:600px; border:1px solid #000; padding:3px; }
+.eg { font-family:arial,helvetica; font-size:60%; font-weight:normal; }
+.egFilter { font-family:arial,helvetica; font-weight:normal; }
+.error { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; color:#A10808; }
+.errorSub { color:#A10808; }
+.filterEnd { border-bottom:1px solid #999; }
+.flag { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:bold; color:#A10808; }
+.flagFilter { color:#A10808; text-transform:uppercase; }
+.flagIcon { visibility:visible; display:inline; }
+.flagPartial { color:#A10808; text-transform:uppercase; font-weight:bold; }
+.footer { font-family:arial; font-size:85%; text-align:center; }
+.global { font-family:verdana,arial,helvetica,sans-serif; font-size:95%; font-weight:normal; text-align:right; background-color:#F0F0F0; }
+.homeButton {}
+.homeNews { border-left:1px solid; border-top:1px solid; border-right:2px solid; border-bottom:1px solid; border-color:#666; border-collapse:collapse; vertical-align:top; padding:0px; }
+.homeTable { border-left:0px solid; border-top:0px solid; border-bottom:0px solid; border-color:#060606; border-collapse:collapse; vertical-align:top; width:640px; }
+.homeTools { border-top:0px solid; border-left:0px solid; border-right:0px solid; border-color:#060606; border-collapse:collapse; vertical-align:top; padding:5px; }
+.instructionsTable { font-family:verdana,arial,helvetica,sans-serif; font-size:90%; font-weight:normal; }
+.juris { white-space:nowrap; }
+.label { font-family:verdana,arial,helvetica,sans-serif; font-size:60%; font-weight:normal;padding-top:0px;padding-bottom:0px; }
+.labelNorm { font-family:verdana,arial,helvetica,sans-serif; font-size:80%; font-weight:normal; }
+.labelTotal { font-family:verdana,arial,helvetica,sans-serif; font-size:60%; font-weight:normal; border-bottom:1px solid #999; }
+.location { font-family:verdana,arial,helvetica,sans-serif; font-size:95%; color:#000080; background-color:#FFFF99;  text-align:left; border-bottom:0px; padding:0px; width:100%; }
+.man { font-weight:bold; color:#A10808; }
+.minusIcon { padding:0px; }
+.norm { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; padding:0px; color:#000; }
+.normLabel { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; padding:0px; }
+.normLow { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; text-transform:lowercase; padding:0px; }
+.note { font-family:verdana,arial,helvetica,sans-serif; font-size:65%; font-weight:normal; }
+.num { white-space:nowrap; }
+.optional { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; color:#333; font-weight:bold; padding-left:2px; }
+.pageMid { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; text-align:center; width:80%; }
+.pageNext { text-align:right; width:10%; }
+.pagePrev { text-align:left; width:10%; }
+.pageRow { vertical-align:middle; }
+.pageSet { font-weight:bold; }
+.paginate2 { visibility:visible; display:block; }
+.photoReplace { visibility:hidden; display:none; }
+.plusIcon { padding:0px; }
+.printLine { visibility:hidden; display:none; }
+.printText { visibility:hidden; display:none; }
+.profileFlag { width:100%; border:solid #F00 1px; border-collapse:collapse; }
+.profileN4 { border:1px solid #333; }
+.quickBack2 { background-color:#FFFFE6; }
+.rangeNav { visibility:visible; display:block; }
+.records { visibility:hidden; font-size:0%; display:none; }
+.row { background-color:#FFFFE6; }
+.screenText { visibility:visible; display:block; }
+.softBack { background-color:#F0F0F0; border-bottom:0px solid #f0f0f0; }
+.sortSmall { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; background-color:#CCC; }
+.strong { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:bold; padding:0px; }
+.strongCenter { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:bold; text-align:center; }
+.tabButtons { padding:0px; border-collapse:collapse; border:0px; }
+.tabInstructions { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; text-align:left; }
+.total { font-family:verdana,arial,helvetica,sans-serif; font-size:75%; font-weight:normal; border-bottom:1px solid #999; }
+@media screen {
+	#hideWhenPrint {display:block;}
+}
+@media print{
+	#hideWhenPrint {display:none;}
+}
+body { margin-top:0px; margin-bottom:0px; text-align:left; background-color:#fff; font-color:#000; }
+h1 { margin:0px; font-family:Arial,sans-serif; font-size:120%; font-weight:bold; text-align:center; }
+h2 { font-family:Arial,sans-serif; font-size:100%; font-weight:bold; text-align:center; }
+ol.alpha { list-style-type:lower-alpha; }
+td { border-right:1px solid #000; padding-left:2px; padding-top:0px; padding-bottom:0px; font-family:Courier New,Courier,monospace; font-size:75%; }
+td#number { width:36%; border:0px; font-family:Arial,sans-serif; font-size:75%; text-align:right; vertical-align:bottom; }
+td.box1 { width:35%; padding-top:5px; border:0px; font-family:Arial,sans-serif; font-size:75%; vertical-align:top; }
+td.box2 { width:65%; padding-top:5px; border:0px; font-family:Arial,sans-serif; font-size:75%; }
+td.botborder {border-bottom:1px solid #000; }
+td.sign { width:20%; padding-top:5px; border:0px; font-family:Arial,sans-serif; font-size:75%; vertical-align:top; }
+td.vehicle { border-left:2px solid #000; border-bottom:1px solid #000; vertical-align:bottom; }
+td.noborder { border-right:0px solid #000; padding-left:2px; padding-top:0px; padding-bottom:0px; font-family:Courier New,Courier,monospace; font-size:75%; }
+tr { vertical-align:top; padding-top:0px; padding-bottom:0px; }
+th { border-right:1px solid #000; border-bottom:1px solid #000; padding-left:2px; font-family:Arial,sans-serif; font-size:75%; text-align:left; }
+#boxa { width:inherit; padding:3px; border:1px solid #000; font-family:Arial,sans-serif; font-size:75%; text-align:left; }
+#boxb { width:inherit; padding:3px; border:1px solid #000; font-family:Arial,sans-serif; font-size:75%; text-align:left; }
+#boxcontact { width:100%; margin:0px; padding:0px; border:1px solid #999; border-collapse:collapse; }
+#boxsign { width:100%; margin:0px; padding:0px; border:0px; border-collapse:collapse; }
+#brakes { width:100%; border-left:1px solid #000; border-top:1px solid #000; border-bottom:1px solid #000; border-collapse:collapse; }
+#defectstable { width:100%; margin:0px; border-bottom:1px solid #000; border-collapse:collapse; }
+#driver { width:100%; border-left:1px solid #000; border-top:0px; border-bottom:1px solid #000; border-collapse:collapse; }
+#driversign { width:38%; border-bottom:1px solid #000; border-right:0px; }
+#h1 { width:40%; border:0px; white-space:nowrap; vertical-align:middle; }
+#header { width:100%; }
+#inspection { width:100%; border-left:1px solid #000; border-top:1px solid #000; border-bottom:1px solid #000; border-collapse:collapse; }
+#inspection tr td { padding-top:0px; padding-bottom:0px;}
+#load { width:100%; border-left:1px solid #000; border-top:0px; border-bottom:1px solid #000; border-collapse:collapse; }
+#load1 { width:44%; }
+#load2 { width:56%; }
+#logo { width:15%; padding:0px; border:0px;padding-bottom:6px; }
+#specialCustomId { width:15%; padding-left:4px; padding-bottom:3px; border:0px; font-family:Arial,sans-serif; font-size:60%; font-weight:normal; line-height:11px; text-align:left; vertical-align:bottom; }
+#notice { width:100%; border-left:1px solid #000; border-top:1px solid #000; border-bottom:1px solid #000; border-collapse:collapse; }
+#notice tr td { width:inherit; margin:0px; padding-top:3px; border-left:2px solid #000; border-top:1px solid #000; border-right:2px solid #000; border-bottom:2px solid #000; font-family:Arial,sans-serif; font-size:80%; font-weight:bold; text-align:left; }
+#notice tr td.centerAlign { text-align:center; } 
+#officers { width:100%; border-left:1px solid #000; border-top:0px; border-bottom:1px solid #000; border-collapse:collapse; }
+#officersign { width:38%; border-bottom:1px solid #000; border-right:0px;border-left:0px; }
+#remarks { width:100%; border-left:1px solid #000; border-top:0px; border-bottom:1px solid #000; border-collapse:collapse; }
+#prohibition { width:inherit; padding:3px; border-top:1px solid #000; font-size:90%; font-weight:normal; text-align:left; }
+#advisory { width:inherit; padding:3px; border-top:1px solid #000; font-size:90%; font-weight:normal; text-align:left; }
+#punit { font-family:Arial,sans-serif; font-size:90%; font-weight:bold; vertical-align:bottom; }
+#unfit { width:100%; margin-top:-1px; padding:3px; border-top:1px solid #000; font-size:90%; font-weight:normal; text-align:left; }
+#verification { width:inherit; padding:3px; border-top:1px solid #000; font-size:90%; font-weight:normal; text-align:left; }
+#faxvehicle { border:1px solid #000; border-collapse:collapse; }
+#wordwrap {word-wrap: break-word;}
+.bottom { font-size:1%; page-break-after:always; }
+.brake { border-bottom:1px solid #000; margin:0px; padding-left:1px; font-family:Verdana,Arial,sans-serif; font-size:60%; font-weight:normal; vertical-align:top; }
+.check { width:13px; height:13px; border:1px solid #000; font-size:50%; }
+.date { white-space:nowrap; font-size:90%; }
+.defects { width:100%; margin:0px; border:0px; border-collapse:collapse; }
+.defect { margin:0px; padding-left:1px; font-family:Courier New,Courier,monospace; font-size:60%; font-weight:bold; vertical-align:top; }
+.defectLast { margin:0px; padding-left:1px; border-right:0px; font-family:Courier New,Courier,monospace; font-size:60%; font-weight:normal; text-align:center; vertical-align:top; }
+.defectrepair { border-left:1px solid #000; }
+.defectsCell { border-bottom:1px solid #000; width:72%; padding:0px; vertical-align:top; }
+.label { margin:0px; padding:0px; font-family:Verdana,Arial,sans-serif; font-size:50%; font-weight:normal; vertical-align:top; white-space:nowrap; }
+.labelwithBottomBorder { border-bottom:1px solid #000; margin:0px; padding:0px; font-family:Verdana,Arial,sans-serif; font-size:60%; font-weight:normal; vertical-align:top; white-space:nowrap; }
+.labelwithLiteBottomBorder { border-bottom:1px solid #B0B0B0; margin:0px; padding:0px; font-family:Verdana,Arial,sans-serif; font-size:60%; font-weight:normal; vertical-align:top; white-space:nowrap; }
+.labelLast { border-bottom:1px solid #000; margin:0px; padding:0px; border-right:0px; font-family:Verdana,Arial,sans-serif; font-size:60%; font-weight:normal; vertical-align:top; }
+.measure { border-bottom:1px solid #000; margin:0px; padding-left:1px; font-family:Courier New,Courier,monospace; font-size:60%; font-weight:bold; vertical-align:top; }
+.measurewithLiteBottomBorder { border-bottom:1px solid #B0B0B0; margin:0px; padding-left:1px; font-family:Courier New,Courier,monospace; font-size:60%; font-weight:bold; vertical-align:top; }
+.nodefect { margin-top:5px; padding-left:1px; font-family:Courier New,Courier,monospace; font-size:70%; font-weight:normal; text-align:center; vertical-align:top; }
+.num { white-space:nowrap; }
+.officersign { width:44%; height:45px; border-left:1px solid #000; border-bottom:1px solid #000; }
+.refuse { width:42%; border:0px; font-family:Arial,sans-serif; text-align:left; /* display: inline-block; */ }
+.vehiclehead { font-family:Arial,sans-serif; font-size:90%; font-weight:bold; }
+.vehicles { width:100%; border-left:1px solid #000; border-top:1px solid #000; border-bottom:1px solid #000; border-collapse:collapse;}
+.verify1 { height:30px; border-left:2px solid #000; border-top:2px solid #000; border-bottom:1px solid #000; }
+.verify2 { border-top:2px solid #000; border-bottom:1px solid #000; border-right:1px solid #000; }
+.verify3 { width:10%; border-top:2px solid #000; border-bottom:1px solid #000; border-right:2px solid #000; }
+.fax { width:inherit; }
+.fax1 { width:30%; border:0px; padding-bottom:5px; font-family:Arial,sans-serif; font-size:75%; }
+.fax2 { width:70%; border:0px; padding-bottom:5px; font-family:Arial,sans-serif; font-size:75%; }
+.boxb { width:inherit; padding:3px; border:1px solid #000; font-family:Arial,sans-serif; font-size:75%; text-align:left; }
+@media print {
+	#showWhenPrint {display:block;}
+}
+@media screen {
+	#showWhenPrint {display:none;}
+}
+#deletedrecord { width:450px; height:80px; display:block; position:absolute; top:250px; z-index: -1; left:30%; border:0px; font-family:Arial,sans-serif; font-size:400%; font-weight:bold; color:#999; letter-spacing:5px; text-align:left; background-color:transparent; clear:both; }
+.skip-to-content {
+    text-decoration: underline;
+    clip: rect(0, 0, 0, 0);
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2
+}
+
+.skip-to-content:hover {
+    text-decoration: none
+}
+
+.skip-to-content:focus {
+    clip: auto;
+    height: auto;
+    line-height: 1.28571;
+    overflow: visible;
+    width: auto;
+	background: #FFFFFF;
+	color: #000000;
+}</style>
+  
+</head>
+<body>
+<table id="header">  	<tr>
+		<td id="logo"><img src="data:image/gif;base64,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" width="115" height="31" alt="Lorem ipsum"/></td>
+		<td id="specialCustomId">Unit Text</td>
+		<td id="h1"><h1>Lorem ipsum</h1></td>
+		<td id="number"><span><strong>Num</strong>12345</span></td>
+	</tr>
+</table>
+
+<table id="inspection">
+	<tr>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A1
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A2
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A3
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A4
+		</td>
+		
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+							A5
+					</td>
+		<td class="botborder" colspan="3"><div class="label">Lorem ipsum</div>
+			A6
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A7
+		</td>
+	</tr>
+	<tr>
+		<td class="botborder" colspan="5"><div class="label">Lorem ipsum</div>
+			A8
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			<span class="num">A9</span>
+		</td>
+		<td class="botborder" colspan="3"><div class="label">Lorem ipsum</div>
+			<span class="num">A10</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="botborder" colspan="5"><div class="label">Lorem ipsum</div>
+			A11
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A12
+		</td>
+		<td class="botborder" colspan="3"><div class="label">Lorem ipsum</div>
+							A13
+					</td>
+	</tr>
+	<tr>
+		<td class="botborder" colspan="5"><div class="label">Lorem ipsum</div>
+			A14
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A15
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A16
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A17
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			A18		
+		</td>
+	</tr>
+ </table>
+
+
+		<table class="vehicles">
+	<tr>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			<span id="punit">B1</span>
+		</td>
+		<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+			B2
+		</td>
+		<td colspan="3" rowspan="5" class="defectsCell">
+					 <!-- <table class="defects"> -->
+			 <table id="defectstable">
+				<tr>
+					<td class="labelwithBottomBorder">Lorem ipsum</td>
+					<td class="labelwithBottomBorder">Lorem ipsum</td>
+					<td class="labelwithBottomBorder">Lorem ipsum</td>
+					<td class="labelLast">Lorem ipsum</td>
+				</tr>
+			<!-- Print 101A defect and subcodes -->
+			 
+			<!-- Print other defects-->
+							<tr>
+				   	<td class="defect">B3</td>
+					<td class="defect">B4</td>
+					<td class="defect">B5</td>
+					<td class="defectLast">B6</td>
+				</tr>
+			 			</table>
+		 		</td>
+	</tr>
+	<tr>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			B7
+		</td>
+		<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+			B8 
+		</td>
+	</tr>
+	<tr>
+		<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+			B9
+		</td>
+		
+		<td class="botborder"><div class="label">Lorem ipsum</div>		
+							B10
+					</td>
+	</tr>
+	<tr>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			B11
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+							B12
+					</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			B13
+		</td>
+	</tr>
+	<tr>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			B14
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			B15
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			B16
+		</td>
+	</tr>
+	<tr>
+		<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+							B16
+					</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+B17
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+B18
+		</td>
+		<td class="botborder">
+						<div class="label">Lorem ipsum</div>
+			B19
+					</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+		   		   B20
+		   		</td>
+	</tr>
+	</table>
+  	   
+<table id="brakes">
+	<tr>
+		<td colspan="2" class="brake">Lorem ipsum </td>
+					<td class="brake">Lorem ipsum</td>
+					<td class="brake">Lorem ipsum</td>
+			</tr>
+	<tr>
+		<td rowspan="2" class="brake">
+		Lorem ipsum C1<br/>Lorem ipsum C2</td>
+		<td class="labelwithLiteBottomBorder">Lorem ipsum</td>
+				   <td class="measurewithLiteBottomBorder">
+			C3<br/>
+			
+		   </td>
+				   <td class="measurewithLiteBottomBorder">
+			C4<br/>
+			
+		   </td>
+			</tr>
+	<tr>
+		<td class="labelwithBottomBorder">Lorem ipsum</td>
+				   <td class="measure">
+			C5<br/>
+			
+		   </td>
+				   <td class="measure">
+			C6<br/>
+			
+		   </td>
+			</tr>
+
+			<tr>
+		<td rowspan="2" class="brake">Lorem ipsum</td>
+		<td class="labelwithLiteBottomBorder">RT</td>
+					<td class="measurewithLiteBottomBorder"> C7</td>
+					<td class="measurewithLiteBottomBorder"> C8</td>
+			</tr>
+	<tr>
+		<td class="labelwithBottomBorder">Lorem ipsum</td>
+					<td class="measure">
+				 C9
+			</td>
+					<td class="measure">
+				 C10
+			</td>
+			</tr>
+	 </table>
+
+ 
+<table id="load">
+	<tr>
+		<td class="botborder" id="load1"><div class="label">Lorem ipsum</div>
+							C11<br/>
+					</td>
+		<td class="botborder" id="load2"><div class="label">Lorem ipsum</div>
+				C12<br/>
+						</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="wordwrap"><div class="label">Lorem ipsum</div>
+			C13				<br/>
+					</td>
+	</tr>
+</table>
+
+<table id="officers">
+	<tr>
+		<td class="officersign"><div class="label">Lorem ipsum</div>
+			
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			C14
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+						C15
+					</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			C16
+		</td>
+		<td class="botborder"><div class="label">Lorem ipsum</div>
+			C17<br/>C18
+		</td>
+	</tr>
+
+	
+	
+</table>
+
+<table id="notice">
+   <tr><td class="centerAlign"><span>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</span></td></tr>
+               	<tr id="verification">
+		<td><span><strong>Lorem ipsum</strong> Lorem ipsum <strong>Lorem ipsum</strong> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</span></td>
+   	</tr>
+      </table>
+
+       	<div class="bottom"></div>
+   	
+	<div id="showWhenPrint">
+		<table id="header">   			<tr>
+				<td id="logo"><img src="data:image/gif;base64,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" width="115" height="31" alt="Lorem ipsum"/></td>
+				<td id="unit">Unit Text</td>
+				<td id="h1"><h1>Commercial Vehicle Inspection Report</h1></td>
+				<td id="number"><span><strong>number</strong>123</span></td>
+			</tr>
+		</table>  
+				<table id="inspection">
+		<tr>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				E1	</td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				E2	 </td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				E3 </td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				E4 </td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+									E5
+							</td>
+			<td class="botborder" colspan="3"><div class="label">Lorem ipsum</div>
+				E6</td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				E7</td>
+		</tr>
+		<tr>
+			<td class="botborder" colspan="5"><div class="label">Lorem ipsum</div>
+				E8</td>
+			<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+				<span class="num"> E9</span>
+			</td>
+			<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+				<span class="num">E10</span>
+			</td>
+		</tr>
+		</table>
+		
+	</div>
+   
+   <br/>
+
+
+<div id="boxa">
+	<h1>Lorem ipsum "A"</h1>
+	<h2>Lorem ipsum Lorem ipsum</h2>
+	<p>F1 Lorem ipsum <strong>Lorem ipsum</strong> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+	<p>F2 Lorem ipsum Lorem ipsum Lorem ipsum</p>
+	<ol class="alpha">
+		<li>F3 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+		<li>F4 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </li>
+		<li>F5 Lorem ipsum Lorem ipsum Lorem ipsum.</li>
+	</ol>
+	<p><em>
+		F6 Lorem ipsum
+	</em></p>
+	<table id="boxcontact">
+		<tr>
+			<td class="box1"><strong>F8 Lorem ipsum</strong></td>
+			<!-- get agency name here -->
+			<td class="box2"><em>F9 Lorem ipsum</em><br/>
+				<em>
+					F10 Lorem ipsum
+				</em><br/>
+				<em>F11 Lorem ipsum Lorem ipsum</em>
+			</td>
+		</tr>
+		<tr>
+			<td class="box1"><strong>Lorem ipsum</strong></td>
+			<td class="box2">
+				
+				<em>
+					F12 Lorem ipsum
+				</em><br/>
+																	<em>F13 Lorem ipsum</em><br/>
+																	<em>F14 Lorem ipsum</em><br/>
+													<em>F15</em><br/>
+													<em>F16 Lorem ipsum</em><br/>
+							</td>
+		</tr>
+	</table>
+	<p>Lorem ipsum <strong>  Lorem ipsum</strong> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+	<table id="boxsign">
+		<tr>
+			<td class="sign">F17 Lorem ipsum</td>
+			<td id="driversign">F18 </td>
+			<td class="refuse">F19 </td>
+		</tr>
+	</table>
+	<p><strong>Lorem ipsum Lorem ipsum Lorem ipsum</strong></p>
+</div>
+   
+   	<div class="bottom"></div>
+	<div id="showWhenPrint">
+	<table id="header">  <!-- header for 3rd page -->
+		<tr>
+			<td id="logo"><img src="data:image/gif;base64,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" width="115" height="31" alt="Lorem ipsum"/></td>
+			<td id="specialCustomId">Unit Text</td>
+			<td id="h1"><h1>Lorem ipsum</h1></td>
+			<td id="number"><span><strong>Number</strong>123</span></td>
+		</tr>
+	</table>
+	<!-- start of information header -->
+		<table id="inspection">
+		<tr>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				H1	</td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				H2	 </td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				H3 </td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				H4 </td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+									H5
+							</td>
+			<td class="botborder" colspan="3"><div class="label">Lorem ipsum</div>
+				H6 </td>
+			<td class="botborder"><div class="label">Lorem ipsum</div>
+				H7 </td>
+		</tr>
+		<tr>
+			<td class="botborder" colspan="5"><div class="label">Lorem ipsum</div>
+				H8	</td>
+			<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+				<span class="num"> H9</span>
+			</td>
+			<td class="botborder" colspan="2"><div class="label">Lorem ipsum</div>
+				<span class="num">H10</span>
+			</td>
+		</tr>
+		</table>
+		
+	</div>
+<br/>
+	
+  
+<div id="boxa">
+	<h1>Lorem ipsum "B"	</h1>
+	<h2>H20 Lorem ipsum</h2>
+	<p>H21 Lorem ipsum <strong>Lorem ipsum</strong> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+	<p>H22 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+	<ol class="alpha">
+		<li>H23 Lorem ipsum Lorem ipsum Lorem ipsum</li>
+		<li>H24 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+		<li>H25 Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</li>
+	</ol>
+	<p><em>
+		H26 Lorem ipsum Lorem ipsum Lorem ipsum
+	</em></p>
+	<table id="boxcontact">
+		<tr>
+			<td class="box1"><strong>H27 Lorem ipsum Lorem ipsum Lorem ipsum</strong></td>
+						<td class="box2"><em>H28 Lorem ipsum Lorem ipsum Lorem ipsum</em><br/>
+				<em>
+					H29 Lorem ipsum Lorem ipsum
+				</em><br/>
+				<em>H30 Lorem ipsum Lorem ipsum</em>
+			</td>
+		</tr>
+		<tr>
+			<td class="box1"><strong>H31 Lorem ipsum Lorem ipsum</strong></td>
+			<td class="box2">
+				
+				<em>
+					H32 Lorem ipsum
+				</em><br/>
+																	<em>H33 Lorem ipsum</em><br/>
+																	<em>H34 Lorem ipsum</em><br/>
+													<em>H35</em><br/>
+													<em>H36 Lorem ipsum Lorem ipsum</em><br/>
+							</td>
+		</tr>
+	</table>
+	<p>H37 Lorem ipsum <strong>Lorem ipsum</strong> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
+	<p>H38 Lorem ipsum Lorem ipsum</strong> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABTElEQVRoge2ZQU4CQRBFX9yCbgRO4h7xAgbiQXRhjDuVA2nkGoocAM+ADmx1XFR1JpHR9LQ2U4t6SacWVHf+SzOzmALHcf7CAJgCL8AGKHe8NsAcuAP6qRJnQNFC+J/WOzBJkfjUA+6BIdBpesg/0AGOgQfN8gGMYzcPqG7iMke6RK6QTG9AL2bDlOomrPGIZLuNaV5o8zBnokRGSLZ5TPNam7s5EyWyj2QrYprDW8Iqtfn2WgiSBRexhotYw0Ws4SLWcBFruIg1XMQaLmINF7GGi1jDRazhItZwEWvUiay1WvyIfaB16yN2ncir1qNscdIJmZbff6gTmWk9zxYnnQuts1+7lD4yeCyRcZcVrpFMK+AwdtMEGTyWyLhrRDvPTBc4QW4gDENPmx4yRgaPbY+lw1qlSAR6yODxmWokt8tVAE/ADQ3+To7jbPMFrUy4GQLZs60AAAAASUVORK5CYII=" alt="checkbox" height="15px" width="15px" /> Lorem ipsum  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABTElEQVRoge2ZQU4CQRBFX9yCbgRO4h7xAgbiQXRhjDuVA2nkGoocAM+ADmx1XFR1JpHR9LQ2U4t6SacWVHf+SzOzmALHcf7CAJgCL8AGKHe8NsAcuAP6qRJnQNFC+J/WOzBJkfjUA+6BIdBpesg/0AGOgQfN8gGMYzcPqG7iMke6RK6QTG9AL2bDlOomrPGIZLuNaV5o8zBnokRGSLZ5TPNam7s5EyWyj2QrYprDW8Iqtfn2WgiSBRexhotYw0Ws4SLWcBFruIg1XMQaLmINF7GGi1jDRazhItZwEWvUiay1WvyIfaB16yN2ncir1qNscdIJmZbff6gTmWk9zxYnnQuts1+7lD4yeCyRcZcVrpFMK+AwdtMEGTyWyLhrRDvPTBc4QW4gDENPmx4yRgaPbY+lw1qlSAR6yODxmWokt8tVAE/ADQ3+To7jbPMFrUy4GQLZs60AAAAASUVORK5CYII=" alt="checkbox" height="15px" width="15px" /> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+	<table id="boxsign">
+		<tr>
+			<td class="sign">H41 Lorem ipsum</td>
+			<td id="driversign"></td>
+			<td class="refuse">H42 Lorem ipsum <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABTElEQVRoge2ZQU4CQRBFX9yCbgRO4h7xAgbiQXRhjDuVA2nkGoocAM+ADmx1XFR1JpHR9LQ2U4t6SacWVHf+SzOzmALHcf7CAJgCL8AGKHe8NsAcuAP6qRJnQNFC+J/WOzBJkfjUA+6BIdBpesg/0AGOgQfN8gGMYzcPqG7iMke6RK6QTG9AL2bDlOomrPGIZLuNaV5o8zBnokRGSLZ5TPNam7s5EyWyj2QrYprDW8Iqtfn2WgiSBRexhotYw0Ws4SLWcBFruIg1XMQaLmINF7GGi1jDRazhItZwEWvUiay1WvyIfaB16yN2ncir1qNscdIJmZbff6gTmWk9zxYnnQuts1+7lD4yeCyRcZcVrpFMK+AwdtMEGTyWyLhrRDvPTBc4QW4gDENPmx4yRgaPbY+lw1qlSAR6yODxmWokt8tVAE/ADQ3+To7jbPMFrUy4GQLZs60AAAAASUVORK5CYII=" alt="checkbox" height="15px" width="15px" /></td>
+		</tr>
+		<tr>
+			<td class="sign"><br/>
+			H43 Lorem ipsum</td>
+			<td id="officersign"></td>
+			<td class="refuse"></td>
+		</tr>
+	</table>
+	<p><strong>H43 Lorem ipsum Lorem ipsum Lorem ipsum</strong></p>
+</div>
+    
+  </body>
+</html>
