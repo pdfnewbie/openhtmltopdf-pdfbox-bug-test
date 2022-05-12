@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.text.SimpleDateFormat;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -42,8 +42,9 @@ public class Html2PdfTest {
         }
         String outFileName = "temp/pdf/convert_" + (withAccessiblity ? "Accessibility" : "Regular") + "_" + currentTs() + ".pdf";
         File outFile = new File(outFileName);
-        Path filePath = Path.of("src/test/java/com/openhtmltopdf/pdfboxout/test/html2pdfTest.html");
-        String htmlString = Files.readString(filePath);
+        Path filePath = Paths.get("src/test/java/com/openhtmltopdf/pdfboxout/test/html2pdfTest.html");
+        byte[] bytes = Files.readAllBytes(filePath);
+        String htmlString = new String (bytes);
 
         final ByteArrayOutputStream bos = generatePdfOpenHtml(htmlString, withAccessiblity);
         final byte[] result = bos.toByteArray();
