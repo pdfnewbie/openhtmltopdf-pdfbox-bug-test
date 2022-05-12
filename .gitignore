@@ -1,0 +1,33 @@
+/target/
+/.classpath
+/.project
+/.settings
+/.sts4-cache
+*/cache/*
+/classes/
+*/generated/*
+/bin
+.factorypath
+/.pmd
+/reports/
+nppBackup/
+
+logs
+temp
+tmp
+/target
+/.dbeaver
+~$S*.docx
+
+# Ant task generic
+cache/
+generated/
+dist/
+
+# exclude cache folder in src code
+!**/src/**/cache
+!**/src/**/classes
+!**/src/**/logs
+!**/src/**/bin
+!**/src/**/dist
+
