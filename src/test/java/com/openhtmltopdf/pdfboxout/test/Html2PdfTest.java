@@ -64,7 +64,7 @@ public class Html2PdfTest {
         System.out.println("withAccessiblity=" + withAccessiblity);
         if (withAccessiblity) {
             builder.usePdfUaAccessbility(true);
-            builder.usePdfAConformance(PdfRendererBuilder.PdfAConformance.PDFA_1_A);
+            builder.usePdfAConformance(PdfRendererBuilder.PdfAConformance.PDFA_3_A);
         }
         File fontsDir = new File("src/test/java/com/openhtmltopdf/pdfboxout/test/fonts");
         File arial = new File(fontsDir, "arial.ttf");
